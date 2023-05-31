@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>Perumahan | Login</title>
+</head>
+
+<body>
+  <nav class="flex sticky top-0 z-[100] bg-white shadow-lg px-12 w-full py-3 items-center">
+    <h1 class="font-bold text-xl text-blue-950">Perumahan</h1>
+    <div id="hamburger" class="flex flex-col mt-1 gap-1 cursor-pointer lg:hidden absolute right-0 mr-12">
+      <span class="w-6 h-[3px] bg-black transition duration-300 ease-in-out origin-top-left "></span>
+      <span class="w-6 h-[3px] bg-black transition duration-300 ease-in-out"></span>
+      <span class="w-6 h-[3px] bg-black transition duration-300 ease-in-out origin-bottom-left"></span>
+    </div>
+    <div id="list-nav"
+      class="navnull absolute z-50 left-0 mt-48 lg:mt-0 w-full  bg-white text-center lg:static lg:flex lg:opacity-100 lg:visible border-b-2 shadow-xl lg:shadow-none lg:border-b-0">
+      <ul class="lg:mr-10 lg:gap-x-10 lg:flex ">
+        <li>
+          <a href="../index.html"
+            class="text-xl hover:bg-[#E4DCCF] hover:text-slate-900 2xl:text-6xl lg:hover:border-b-4  px-2 py-1  block transition-all active:scale-95 active:opacity-80 lg:hover:bg-inherit lg:hover:text-white">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="text-xl 2xl:text-6xl hover:bg-[#E4DCCF] hover:text-slate-900 lg:hover:border-b-4  px-2 py-1  block transition-all active:scale-95 active:opacity-80 lg:hover:bg-inherit lg:hover:text-white">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            class="text-xl hover:bg-[#E4DCCF] hover:text-slate-900 2xl:text-6xl lg:hover:border-b-4  px-2 py-1  block transition-all active:scale-95 active:opacity-80 lg:hover:bg-inherit lg:hover:text-white">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a href="./pages/login.html"
+            class="text-xl text-white lg:border-b-4 lg:border-[#EA5455] px-2 py-1 block bg-blue-950 lg:bg-inherit 2xl:text-6xl">
+            Login/Register
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="flex justify-center items-center mt-10">
+    <form class="bg-blue-200 rounded-md px-10 py-16">
+        <h1 class="text-xl font-semibold text-center mb-5">Login</h1>
+        <div>
+            <input type="text" placeholder="Username/Email" name="username" class="mb-3  rounded-md px-4 py-2" required>
+        </div>
+        <div>
+            <input type="password" placeholder="Password" name="password" class=" rounded-md px-4 py-2" required>
+        </div>
+       
+        <button name="submit" class="w-full bg-blue-500 text-white rounded-md mt-5 py-1 ">Login</button>
+        <p class="text-xs mt-2 font-light">Belum Punya Akun ? <a href="./register.html" class="text-blue-600 underline duration-150 hover:opacity-70">Register</a></p>
+    </form>
+</div>
+
+  <script src="../js.js"></script>
+</body>
+
+</html>
