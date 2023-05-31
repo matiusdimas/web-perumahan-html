@@ -3,22 +3,22 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/output.css">
-    <title>perumahan</title>
+    <title>Perumahan</title>
 </head>
 
-<body>
-    <nav class="flex shadow-lg bg-white px-20 items-center sticky top-0 z-[100] w-full py-3">
-        <h1 class="text-2xl font-bold pr-10">Perumahan S</h1>
-        <div id="hamburger" class="flex flex-col mt-1 gap-1 cursor-pointer lg:hidden absolute right-0 mr-20">
+<body class="bg-white">
+    <nav class="flex sticky top-0 z-[100] bg-white shadow-lg px-12 w-full py-3 items-center">
+        <h1 class="font-bold text-xl text-blue-950">Perumahan</h1>
+        <div id="hamburger" class="flex flex-col mt-1 gap-1 cursor-pointer lg:hidden absolute right-0 mr-12">
             <span class="w-6 h-[3px] bg-black transition duration-300 ease-in-out origin-top-left "></span>
             <span class="w-6 h-[3px] bg-black transition duration-300 ease-in-out"></span>
             <span class="w-6 h-[3px] bg-black transition duration-300 ease-in-out origin-bottom-left"></span>
         </div>
-        <div id="nav-menu"
-            class="navnull absolute z-50 left-0 top-14 w-full  bg-white text-center lg:static lg:flex lg:opacity-100 lg:visible border-b-2 shadow-xl lg:shadow-none lg:border-b-0">
+        <div id="list-nav"
+            class="navnull absolute z-50 left-0 mt-40 lg:mt-0 w-full  bg-white text-center lg:static lg:flex lg:opacity-100 lg:visible border-b-2 shadow-xl lg:shadow-none lg:border-b-0">
             <ul class="lg:mr-10 lg:gap-x-10 lg:flex ">
                 <li>
                     <a href="#"
@@ -34,7 +34,7 @@
                 </li>
                 <li>
                     <a href="#"
-                        class="text-xl hover:bg-[#E4DCCF] hover:text-slate-900 2xl:text-6xl lg:hover:border-b-4  px-2 py-1  block transition-all active:scale-95 active:opacity-80 lg:hover:bg-inherit lg:hover:text-white z-50">
+                        class="text-xl hover:bg-[#E4DCCF] hover:text-slate-900 2xl:text-6xl lg:hover:border-b-4  px-2 py-1  block transition-all active:scale-95 active:opacity-80 lg:hover:bg-inherit lg:hover:text-white">
                         Contact
                     </a>
                 </li>
@@ -42,95 +42,55 @@
         </div>
     </nav>
 
-    <div class="grid py-10 justify-center bg-[#AFD3E2]">
+    <div class="grid justify-center py-10  bg-[#AFD3E2]">
         <h1 class="text-center text-slate-700 mb-2 font-semibold">Jual Beli Rumah</h1>
-        <div class="bg-[#19A7CE] rounded-md px-8 py-10 grid justify-items-center gap-5">
+        <div class="bg-[#19A7CE] rounded-md px-8 py-5 grid justify-items-center gap-4">
             <ul class="flex gap-5 text-white font-bold">
                 <li><a href="#" class="border-b-2 px-2">Di Jual</a></li>
                 <li><a href="#" class="px-2">Di Sewa</a></li>
             </ul>
-
-            <div class="w-72">
+            <div class="w-52">
                 <div class="relative h-10 w-full min-w-[200px]">
                     <input type="search"
-                        class="w-full duration-[50ms] rounded-[7px] bg-white px-3 py-2.5  text-sm outline outline-0 focus:border-2 focus:border-blue-900 focus:outline-0"
+                        class="w-full duration-[50ms] rounded-[7px] bg-white px-3 py-2.5 border-2 border-transparent text-sm outline outline-0 focus:border-2 focus:border-blue-900 focus:outline-0"
                         placeholder="Cari Daerah Rumah" />
                 </div>
             </div>
-
         </div>
     </div>
-    <div class="grid justify-center px-10">
-        <div class="my-10 w-full">
-            <h1 class="font-bold mx-2 mb-5 text-start">Rekomendasi Rumah</h1>
 
-            <div id="content-gambar" class="flex overflow-x-auto no-scrollbar gap-x-5 w-full scroll-smooth">
+    <div class="grid justify-center py-10 bg-slate-200">
+        <div>
+            <h1 class="text-center font-semibold mb-5">Rekomendasi Rumah</h1>
+            
+            <div id="content-gambar" class="flex px-5 overflow-x-auto no-scrollbar gap-x-5 w-full scroll-smooth">
                 <div id="left-gambar"
-                    class="absolute hidden z-[99]  left-12 self-center bg-blue-800 px-4 py-2 text-white  font-semibold cursor-pointer opacity-75 text-lg rounded-full transition-all hover:opacity-100 active:bg-blue-950">
-                    &lt;</div>
-
-                <div class="flex-shrink-0 ">
-                    <img class="rounded-lg w-52 h-36" src="./img/rumah1.jpg" alt="rumah">
-                    <div class="ml-2">
-                        <p class="text-blue-900 font-semibold">Rp 157 Juta</p>
-                        <p>Tipe 30</p>
-                        <p class="font-light text-xs">Majalaya</p>
-                    </div>
-                </div>
-
-                <div class="flex-shrink-0 ">
-                    <img class="rounded-lg w-52 h-36" src="./img/rumah2.jpg" alt="rumah">
-                    <div class="ml-2">
-                        <p class="text-blue-900 font-semibold">Rp 157 Juta</p>
-                        <p>Tipe 30</p>
-                        <p class="font-light text-xs">Majalaya</p>
-                    </div>
-                </div>
-
-                <div class="flex-shrink-0 ">
-                    <img class="rounded-lg w-52 h-36" src="./img/rumah3.jpg" alt="rumah">
-                    <div class="ml-2">
-                        <p class="text-blue-900 font-semibold">Rp 157 Juta</p>
-                        <p>Tipe 30</p>
-                        <p class="font-light text-xs">Majalaya</p>
-                    </div>
-                </div>
-
-                <div class="flex-shrink-0 ">
-                    <img class="rounded-lg w-52 h-36" src="./img/rumah4.jpg" alt="rumah">
-                    <div class="ml-2">
-                        <p class="text-blue-900 font-semibold">Rp 157 Juta</p>
-                        <p>Tipe 30</p>
-                        <p class="font-light text-xs">Majalaya</p>
-                    </div>
-                </div>
-
-                <div class="flex-shrink-0 ">
-                    <img class="rounded-lg w-52 h-36" src="./img/rumah5.jpg" alt="rumah">
-                    <div class="ml-2">
-                        <p class="text-blue-900 font-semibold">Rp 157 Juta</p>
-                        <p>Tipe 30</p>
-                        <p class="font-light text-xs">Majalaya</p>
-                    </div>
+                class="absolute hidden z-[99]  left-5 self-center bg-blue-800 px-4 py-2 text-white  font-semibold cursor-pointer opacity-75 text-lg rounded-full transition-all hover:opacity-100 active:bg-blue-950">
+                &lt;
                 </div>
                 <div class="flex-shrink-0 ">
-                    <img class="rounded-lg w-52 h-36" src="./img/rumah1.jpg" alt="rumah">
-                    <div class="ml-2">
-                        <p class="text-blue-900 font-semibold">Rp 157 Juta</p>
-                        <p>Tipe 30</p>
-                        <p class="font-light text-xs">Majalaya</p>
-                    </div>
+                    <img class="w-52 h-36" src="./img/rumah1.jpg" alt="gambar">
+                </div>
+                <div class="flex-shrink-0 ">
+                    <img class="w-52 h-36" src="./img/rumah2.jpg" alt="gambar">
+                </div>
+                <div class="flex-shrink-0 ">
+                    <img class="w-52 h-36" src="./img/rumah3.jpg" alt="gambar">
+                </div>
+                <div class="flex-shrink-0 ">
+                    <img class="w-52 h-36" src="./img/rumah4.jpg" alt="gambar">
+                </div>
+                <div class="flex-shrink-0 ">
+                    <img class="w-52 h-36" src="./img/rumah5.jpg" alt="gambar">
                 </div>
                 <div id="right-gambar"
-                    class="absolute z-[99]  right-12 self-center bg-blue-800 px-4 py-2 text-white  font-semibold cursor-pointer opacity-70 text-lg rounded-full transition-all hover:opacity-100 active:bg-blue-950">
-                    &gt;</div>
+                    class="absolute z-[99]  right-5 self-center bg-blue-800 px-4 py-2 text-white  font-semibold cursor-pointer opacity-70 text-lg rounded-full transition-all hover:opacity-100 active:bg-blue-950">
+                    &gt;
+                </div>
             </div>
         </div>
-
-
     </div>
 
-    
     <script src="js.js"></script>
 </body>
 
