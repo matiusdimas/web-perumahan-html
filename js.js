@@ -15,12 +15,16 @@ const leftGambar = document.getElementById('left-gambar');
 const gambar = document.getElementById('content-gambar');
 
 gambar.onscroll = function () {
+
+    console.log(`iniSleft ${gambar.scrollLeft}`)
+    console.log(`iniSwidth ${gambar.scrollWidth}`)
+    console.log(`iniSclient ${gambar.clientWidth}`)
     if (gambar.scrollLeft == 0) {
         leftGambar.classList.add('hidden')
     } else {
         leftGambar.classList.remove('hidden')
     }
-    if (gambar.scrollLeft === (gambar.scrollWidth - gambar.clientWidth)) {
+    if (Math.ceil(gambar.scrollLeft) === (gambar.scrollWidth - gambar.clientWidth) || (Math.floor(gambar.scrollLeft) === (gambar.scrollWidth - gambar.clientWidth))) {
         rightGambar.classList.add('hidden')
     } else {
         rightGambar.classList.remove('hidden')
