@@ -38,3 +38,7 @@
   .navnull {
     @apply opacity-0 invisible transition-all duration-300;
   }
+
+  .dihover {
+    @apply hover:opacity-80 duration-200 active:opacity-100 active:scale-105;
+  }
